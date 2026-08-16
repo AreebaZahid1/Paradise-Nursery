@@ -1,16 +1,74 @@
-# React + Vite
+# e-plantShopping
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Paradise Nursery Shopping Application
 
-Currently, two official plugins are available:
+e-plantShopping is a dynamic React-based shopping cart application developed for Paradise Nursery, an online plant shop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Description
 
-## React Compiler
+The application allows users to browse and shop for different types of plants. Users can view plant images, names, descriptions, and prices and add plants to their shopping cart.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can also manage their shopping cart by increasing or decreasing quantities, removing products, and viewing the total cost.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Paradise Nursery landing page
+- e-plantShopping project
+- Plant product listing
+- Three plant categories
+- At least six plants per category
+- Plant images
+- Plant names and descriptions
+- Plant prices
+- Add to Cart functionality
+- Dynamic shopping cart count
+- Increase and decrease product quantity
+- Remove products from cart
+- Individual product totals
+- Overall cart total
+- Checkout Coming Soon message
+- Continue Shopping button
+- About Us page
+- Responsive user interface
+
+## Plant Categories
+
+The application contains:
+
+1. Indoor Plants
+2. Flowering Plants
+3. Succulents
+
+Each category contains six unique plants.
+
+## Technologies Used
+
+- React
+- Vite
+- React Router
+- Redux Toolkit
+- React Redux
+- JavaScript
+- CSS
+- Lucide React
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── ProductList.jsx
+│   └── CartItem.jsx
+├── pages/
+│   ├── Home.jsx
+│   └── AboutUs.jsx
+├── redux/
+│   ├── CartSlice.jsx
+│   └── store.js
+├── data/
+│   └── plants.js
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
