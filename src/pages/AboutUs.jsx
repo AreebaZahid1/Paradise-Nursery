@@ -1,68 +1,47 @@
-import { Leaf, Heart, Sun, Sprout } from "lucide-react";
-
 function AboutUs() {
   return (
-    <div className="about-page">
-      <section className="about-hero">
-        <Leaf size={50} />
-
+    <div className="about-us-container">
+      <div className="about-us-content">
         <h1>About Paradise Nursery</h1>
 
+        <h2>Welcome to Paradise Nursery</h2>
+
         <p>
-          Growing happiness, one plant at a time.
+          Paradise Nursery is an online plant shop dedicated to
+          bringing the beauty of nature into homes and workplaces.
         </p>
-      </section>
 
-      <section className="about-content">
-        <div className="about-text">
-          <h2>Welcome to Paradise Nursery</h2>
+        <p>
+          We offer a wide variety of indoor plants, flowering plants,
+          and succulents. Our goal is to make it easy for plant lovers
+          to discover beautiful and healthy plants from the comfort
+          of their homes.
+        </p>
 
-          <p>
-            Paradise Nursery is an online plant shop created for
-            people who love bringing the beauty of nature into
-            their homes.
-          </p>
+        <p>
+          Whether you are an experienced gardener or purchasing your
+          first houseplant, Paradise Nursery provides a simple and
+          enjoyable shopping experience.
+        </p>
 
-          <p>
-            We offer a carefully selected collection of indoor
-            plants, flowering plants, and succulents. Our goal is
-            to make it easy for everyone to find beautiful plants
-            and create a greener living space.
-          </p>
+        <h2>Our Mission</h2>
 
-          <p>
-            Whether you are an experienced plant lover or buying
-            your first houseplant, Paradise Nursery is here to
-            help you find the perfect plant.
-          </p>
-        </div>
+        <p>
+          Our mission is to encourage people to bring more greenery
+          into their everyday lives. We believe that plants can make
+          living spaces more beautiful, peaceful, and healthy.
+        </p>
 
-        <div className="about-features">
-          <div className="feature-card">
-            <Heart size={35} />
-            <h3>Plants With Care</h3>
-            <p>
-              We choose plants with quality and care in mind.
-            </p>
-          </div>
+        <h2>What We Offer</h2>
 
-          <div className="feature-card">
-            <Sun size={35} />
-            <h3>Beautiful Spaces</h3>
-            <p>
-              Our plants help make homes brighter and more relaxing.
-            </p>
-          </div>
-
-          <div className="feature-card">
-            <Sprout size={35} />
-            <h3>Grow With Us</h3>
-            <p>
-              We make plant shopping simple and enjoyable.
-            </p>
-          </div>
-        </div>
-      </section>
+        <ul>
+          <li>Indoor plants</li>
+          <li>Flowering plants</li>
+          <li>Succulents</li>
+          <li>Easy online plant shopping</li>
+          <li>Shopping cart management</li>
+        </ul>
+      </div>
     </div>
   );
 }
