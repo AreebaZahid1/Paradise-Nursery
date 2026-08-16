@@ -1,40 +1,37 @@
-import { Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
+import { useState } from "react";
 import ProductList from "./components/ProductList";
-import CartItem from "./components/CartItem";
+import "./App.css";
 
 function App() {
+  const [showProducts, setShowProducts] = useState(false);
+
+  const handleGetStarted = () => {
+    setShowProducts(true);
+  };
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
+    <div className="app">
+      {!showProducts ? (
+        <div className="landing-page">
+          <div className="landing-content">
+            <h1>Welcome to Paradise Nursery</h1>
 
-      <Route
-        path="/about"
-        element={
-          <>
-            <Home />
-            <AboutUs />
-          </>
-        }
-      />
+            <p>
+              Discover beautiful plants and bring nature into your home.
+            </p>
 
-      <Route
-        path="/plants"
-        element={<ProductList />}
-      />
-
-      <Route
-        path="/cart"
-        element={<CartItem />}
-      />
-
-      <Route
-        path="*"
-        element={<Home />}
-      />
-    </Routes>
+            <button
+              className="get-started-btn"
+              onClick={handleGetStarted}
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      ) : (
+        <ProductList />
+      )}
+    </div>
   );
 }
 
